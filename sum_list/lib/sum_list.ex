@@ -1,9 +1,12 @@
 defmodule SumList do
-  def hello do
-    "Hello Mr. V!"
-  end
+  def hello(name), do: "Hello Mr. #{name}!"
 
-  def sumNumbers(number1, number2) do
-    number1 + number2
+  def call(list), do: sum(list, 0)
+
+  defp sum([], acc), do: acc
+
+  defp sum([head | tail], acc) do
+    acc = acc + head
+    sum(tail, acc)
   end
 end
