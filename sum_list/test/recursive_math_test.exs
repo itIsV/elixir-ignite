@@ -5,7 +5,7 @@ defmodule RecusiveMathTest do
     test "returns the list sum " do
       response = RecursiveMath.sum_list([1, 2, 3, 4, 5])
 
-      expect_response = 15
+      expected_response = 15
 
       assert response == expect_response
     end
@@ -15,7 +15,7 @@ defmodule RecusiveMathTest do
     test "returns multiplication of all previous integers up to n" do
       response = RecursiveMath.factor_list([1, 2, 3, 4, 5])
 
-      expect_response = 120
+      expected_response = 120
 
       assert response == expect_response
     end

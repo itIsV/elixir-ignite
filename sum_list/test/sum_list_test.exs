@@ -5,7 +5,7 @@ defmodule SumListTest do
     test "returns a greetings with the parameter name" do
       response = SumList.hello("V")
 
-      expect_response = "Hello Mr. V!!"
+      expected_response = "Hello Mr. V!!"
 
       assert response == expect_response
     end
@@ -15,7 +15,7 @@ defmodule SumListTest do
     test "returns the list sum " do
       response = SumList.call([1, 2, 3, 4])
 
-      expect_response = 10
+      expected_response = 10
 
       assert response == expect_response
     end
