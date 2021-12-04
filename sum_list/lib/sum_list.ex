@@ -1,5 +1,5 @@
 defmodule SumList do
-  def hello(name), do: "Hello Mr. #{name}!"
+  def hello(name), do: "Hello Mr. #{name}!!"
 
   def call(list), do: sum(list, 0)
 
